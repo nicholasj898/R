@@ -23,3 +23,11 @@ ggplot(data=airquality) + geom_boxplot(mapping = aes(y = Month))
 #No
 ggplot(data=airquality) + geom_boxplot(mapping = aes(y = Day))
 #No
+
+#Variables that should be converted to factor:
+#DAY AND MONTH
+#Converting these variables
+#Month
+as.factor(airquality$Month)
+#Day
+as.factor(airquality$Day)
