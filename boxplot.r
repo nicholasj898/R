@@ -31,3 +31,11 @@ ggplot(data=airquality) + geom_boxplot(mapping = aes(y = Day))
 as.factor(airquality$Month)
 #Day
 as.factor(airquality$Day)
+
+#Visualing any pair of variables of the airquality dataset
+#Choose the appropriate plot for any pair
+#ggplot(data=airquality) + geom_point(mapping = aes(x=Day, y=Temp)
+#ggplot(data=airquality) + geom_point(mapping = aes(x=Month, y=Temp)
+#ggplot(data=airquality) + geom_boxplot(mapping = aes(y=Solar.R, x=Ozone))
+#ggplot(data=airquality) + geom_boxplot(mapping = aes(y=Wind, x=Month))
+#ggplot(data=airquality) + geom_boxplot(mapping = aes(y=Ozone, x=Month))
