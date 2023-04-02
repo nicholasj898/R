@@ -33,3 +33,8 @@ mpg = 35.13557 - 0.05358*displacement
 mpg = 24.43445 - 0.05358*displacement + 10.73507*0 + 10.70112*0 + 7.23906*1 + 9.01381*0
 mpg = 24.43445 + -0.05358*displacement + 7.23906*1 
 mpg = 31.67351 - 0.05358*displacement
+
+#Plot mpg vs. displacement and overlay the best fit model. (code, plot)
+#Hint/A shortcut: plot the predictions; use add_predictions() and geom_line() and use the color aesthetic for cylinders
+new <- use %>% add_predictions(mod_displ_cyl)
+ggplot(data=new) + geom_point(aes(x=displacement, y=mpg)) + geom_line(aes(x=displacement, y=pred, color=cylindersIntoFactor))
