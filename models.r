@@ -19,3 +19,17 @@ summary(mod_displ_cyl)
 #4 dummy variables were created in the model
 #What are they called?
 #Cylinder4, cylinder5, cylinder6, cylinder8
+
+#The model equations relating mpg with displacement and cylinders. 
+#(need to simplify when varts is 0 or 1)
+mpg = 24.43445 - 0.05358*displacement + 10.73507*0 + 10.70112*0 + 7.23906*0 + 9.01381*0
+mpg = 24.43445 - 0.05358*displacement
+mpg = 24.43445 - 0.05358*displacement +10.73507*1 + 10.70112*0 + 7.23906*0 + 9.01381*0
+mpg = 24.43445 - 0.05358*displacement + 10.73507*1
+mpg = 35.16952 - 0.05358*displacement
+mpg = 24.43445 - 0.05358*displacement + 10.73507*0 + 10.70112*1 + 7.23906*0 + 9.01381*0
+mpg = 24.43445 - 0.05358*displacement + 10.70112*1
+mpg = 35.13557 - 0.05358*displacement 
+mpg = 24.43445 - 0.05358*displacement + 10.73507*0 + 10.70112*0 + 7.23906*1 + 9.01381*0
+mpg = 24.43445 + -0.05358*displacement + 7.23906*1 
+mpg = 31.67351 - 0.05358*displacement
